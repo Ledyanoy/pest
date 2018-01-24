@@ -37,6 +37,9 @@
         background-image: url(pictures/loupe.svg);
         background-repeat: no-repeat;
         background-position: 15px 8px;
-        cursor: pointer;            
+        cursor: pointer; 
+        &:active {
+            background-color: $link-color;
+        }           
     }
 }
