@@ -3,6 +3,10 @@
     justify-content: space-between; 
     @media (max-width: 845px){
         flex-wrap: wrap;        
+    }
+    @media (max-width: 420px){
+        flex-direction: column;
+        align-items: center;        
     }   
     &__logo {
         margin-top: 8px;
@@ -18,14 +22,21 @@
         @media (max-width: 845px){
             order: 3;
             width: 100%;
-        }        
+        }
+        @media (max-width: 370px){
+            flex-direction: column;
+            align-items: center;         
+        }       
     }
     &__login {
-        width: 30%;
+        width: 200px;
         margin-left: 5%;
         transition: margin 0.4s;
         @media (max-width: 845px){ 
-            margin-left: 0%;
+            margin-left: 0%;            
+        }
+        @media (max-width: 420px){
+            margin-bottom: 20px;        
         }               
     }
 }

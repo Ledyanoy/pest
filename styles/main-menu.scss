@@ -2,24 +2,45 @@
     width: 100%;      
     background-color: $mm-color;
     display: flex; 
-    flex-wrap: wrap;          
+    justify-content: space-around;
+    @media (max-width: 740px) {
+        flex-wrap: wrap;        
+    }  
+    @media (max-width: 555px) {
+        flex-direction: column;        
+    }                 
     &__item{             
         background-color: $mm-color;
         padding-top: 14px;
-        padding-bottom: 12px;        
+        padding-bottom: 12px;
         &:hover .main-menu__sub {            
-                display: block;           
-        }               
+            display: block;           
+        } 
+        @media (max-width: 555px) {
+           text-align: center;
+           overflow: hidden; 
+           border-bottom: 1px solid $black-color; 
+           padding: 0px;
+           &:last-child {
+               border: none;
+           }       
+        }                         
     } 
     &__link{
         background-color: $mm-color;
         text-decoration: none;
         color: $black-color;
         font-size: 15px;
-        text-transform: uppercase; 
-        padding-left: 30px;
-        padding-right: 30px;
+        text-transform: uppercase;         
         position: relative;
+        @media (max-width: 740px) {
+            margin: 0 25px;        
+        }
+        @media (max-width: 555px) {            
+            display: block; 
+            padding: 15px 0px;
+            margin: 0px;                           
+        }                
         &:hover {
             color: $white-color;
         }         
@@ -27,14 +48,18 @@
             &:after {
                 content:""; 
                 position: absolute;
-                right: 20px;
+                right: -10px;
                 top: 10px;               
                 width: 0;
                 height: 0;
                 border-left: 3px solid transparent;
                 border-right: 3px solid transparent;
-                border-top: 5px solid $black-color;                
-            }
+                border-top: 5px solid $black-color; 
+                @media (max-width: 555px) {            
+                    right: 20px;
+                    top: 20px;                           
+                }               
+            }            
         }        
     }
     &__sub {
@@ -49,5 +74,5 @@
                 color: $white-color;            
             }  
         }
-    }
+    }    
 }
