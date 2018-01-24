@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "PT Sans"; 
+	src: url(font/PTSans-Regular.woff2); 
+} 
+.page { 
+    font-family: $font-primary;       
+    &__inner {        
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+    &__header {     
+        margin-top: 22px;
+    }
+    &__main {
+        margin-top: 25px;
+    }
+}

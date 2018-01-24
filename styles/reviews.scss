@@ -1,0 +1,38 @@
+.reviews {
+    width: 65%;
+    &__member {
+        display: block;
+        margin-left: 35%;
+        margin-bottom: 28px;
+    } 
+    &__name {
+        font-weight: bold;
+        font-size: 18px;
+    } 
+    &__description {        
+        color: $present-story-color;
+        font-size: 14px;
+        margin-top: 5px;
+        line-height: 1.4em;
+        width: 70%;
+    }
+    &__story  {
+        font-size: 14px;
+        line-height: 1.4em; 
+        margin-bottom: 18px;     
+    } 
+    &__quotes {
+        color: $link-color-hover;
+        font-size: 28px;
+        position: relative;
+        top: 2px;
+        line-height: 0em;
+    }  
+    &__link {        
+        font-size: 14px;
+        color: $black-color;
+        text-decoration: none;
+        border-bottom: 1px solid $link-color-hover;
+        
+    }  
+}

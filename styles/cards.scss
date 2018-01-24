@@ -1,0 +1,63 @@
+.cards {
+    display: flex;
+    margin-left: 7px;
+    &__item {        
+        text-align: center;
+        margin-right: 4%;
+        &:nth-child(2) {
+            margin-right: 5%;   
+        }
+        &:nth-child(3) {
+            margin-right: 6%;   
+        }
+        &:nth-child(5) {
+            margin-right: 5%;   
+        }          
+        &:last-child {
+            margin-right: 0%;   
+        }
+        &:hover {
+            .cards__photo {
+                border: 3px solid $link-color-hover;                 
+            }
+            .cards__text {
+                color: $link-color-hover; 
+                border-bottom: none;                
+            }
+        }
+    }
+    &__photo {
+        display: block;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;        
+        margin: 0 auto; 
+        margin-bottom: 22px; /* для pp*/
+        box-sizing: border-box;      
+        &--comar {
+            background: url(pictures/comar.jpg) no-repeat -1px;
+        }
+        &--tarakan {
+            background: url(pictures/tarakan.jpg) no-repeat -1px;
+        }
+        &--grizuni {
+            background: url(pictures/grizuni.jpg) no-repeat -1px;
+        }
+        &--ptizi {
+            background: url(pictures/ptizi.jpg) no-repeat -1px;
+        }
+        &--mishi {
+            background: url(pictures/mishi.jpg) no-repeat -1px;
+        }
+        &--krisi {
+            background: url(pictures/krisi.jpg) no-repeat -1px;
+        }
+    }
+    &__text {        
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;        
+        color: $black-color;
+        border-bottom: 2px solid $link-color-hover;
+    }
+}

@@ -8,80 +8,86 @@
     </head>	   
     <body class="page"> 
       <div class="page__inner">
-        <header class="page__header">
-          <a href="" class="logo">
-            <img src="pictures/logotyle-mobile.png" alt="logo">
+        <header class="page__header p-header">
+          <a href="" class="p-header__logo">
+            <img src="pictures/logo.png" alt="logo">
           </a>
-          <div class="feedback-search">
-            <ul class="phone">
-              <li class="city">Москва:<a href="tel:+74995055013">+7 (499) <span calss="phone-font">505-50-03</span></a>            
+          <div class="p-header__fb feedback-search">
+            <ul class="feedback-search__phone phone">
+              <li class="phone__city">Москва:<a href="tel:+74995055013" class="phone__code">+7 (499) <span class="phone__font">505-50-03</span></a>            
               </li>
-              <li class="city">Регионы РФ:<a href="tel:88003335911"><span calss="phone-font">8 800 3335 911</span></a>            
+              <li class="phone__city">Регионы РФ:<a href="tel:88003335911" class="phone__code"><span class="phone__font">8 800 3335 911</span></a>            
               </li>
             </ul>
-            <div class="feedback">
-                <a href="" class="link">Заказать звонок</a>
-                или <a href="" class="link">написать нам</a>          
+            <div class="feedback-search__fb feedback">
+                <a href="" class="feedback__font">Заказать звонок</a>
+                или <a href="" class="feedback__font">написать нам</a>          
             </div>
-            <div>
-              <input type="search">
+            <div class="feedback-search__search">
+              <input type="search" placeholder="Поиск среди 35 000 товаров" class="feedback-search__input">
+              <button class="feedback-search__btn">                
+                <span class="visually-hidden">Искать</span>
+              </button>
             </div>
           </div>
-          <div class="login-card">
-            <div class="login">
-              <a href="" class="link">Войти</a>
+          <div class="p-header__login login">
+            <div class="feedback feedback--login">
+              <a href="" class="feedback__font">Войти</a>
               или
-              <a href="" class="link">Зарегистрироваться</a>
+              <a href="" class="feedback__font">Зарегистрироваться</a>
             </div>
-            <div class="card">
-              <a href="">Корзина</a>1400 руб.
-              <span class="delivery">Доставка: с 09:00 до 19:00 (МСК)</span>              
+            <div class="login__card">
+              <p class="login__text"><a href="" class="login__basket">Корзина</a><span class="login__price">1 400</span> <span class="login__cur">руб.</span>
+              <span class="login__delivery">Доставка: с 09:00 до 19:00 (МСК)</span>
+              </p>              
             </div>
           </div>
         </header>
-        <main class="page-main">
+        <main class="page__main main">
           <ul class="main-menu">
-            <li class="main-menu__item"><a href="">по вредителям</a>
-              <ul class="sub-menu">
-                <li><a href="">Грызуны</a></li>
-                <li><a href="">Насекомые</a></li>
-              <ul>
+            <li class="main-menu__item"><a href="" class="main-menu__link main-menu__link--cont">по&nbsp;вредителям</a>
+              <ul class="main-menu__sub">
+                <li><a href="" class="main-menu__sub-link">Грызуны</a></li>
+                <li><a href="" class="main-menu__sub-link">Насекомые</a></li>
+              </ul>
             </li>
-            <li class="main-menu__item"><a href="">по виду продукции</a>
-              <ul class="sub-menu">
-                <li><a href="">Мелки</a></li>
-                <li><a href="">Радары</a></li>
-              <ul>
+            <li class="main-menu__item"><a href="" class="main-menu__link  main-menu__link--cont">по&nbsp;виду&nbsp;продукции</a>
+              <ul class="main-menu__sub">
+                <li><a href="" class="main-menu__sub-link">Мелки</a></li>
+                <li><a href="" class="main-menu__sub-link">Радары</a></li>
+              </ul>
             </li>
-            <li class="main-menu__item"><a href="">по брендам</a>
-              <ul class="sub-menu">
-                <li><a href="">kill-them-all</a></li>
-                <li><a href="">kill-just-roaches</a></li>
-              <ul>
+            <li class="main-menu__item"><a href="" class="main-menu__link  main-menu__link--cont">по&nbsp;брендам</a>
+              <ul class="main-menu__sub">
+                <li><a href="" class="main-menu__sub-link">kill-them-all</a></li>
+                <li><a href="" class="main-menu__sub-link">kill-just-roaches</a></li>
+              </ul>
             </li>
-            <li class="main-menu__item"><a href="">аксессуары</a>
-              <ul class="sub-menu">
-                <li><a href="">заборчики</a></li>
-                <li><a href="">решеточки</a></li>
-              <ul>
+            <li class="main-menu__item"><a href="" class="main-menu__link  main-menu__link--cont">аксессуары</a>
+              <ul class="main-menu__sub">
+                <li><a href="" class="main-menu__sub-link">заборчики</a></li>
+                <li><a href="" class="main-menu__sub-link">решеточки</a></li>
+              </ul>
             </li>
-            <li class="main-menu__item"><a href="">акции</a></li>            
-            <li class="main-menu__item"><a href="">база зананий</a></li>   
-          </ul> 
-          <ul class="nvigation"> 
-            <li><a href="" class="nav-link">Оптовикам</a>
-              <p>Приглашаем к сотрудничеству организации и физических лиц для работы в качестве наших дилеров или торговых представителей.</p>
-            </li> 
-            <li><a href="" class="nav-link">Задать вопрос</a>
-              <p>Если у вас возникли вопросы, то наши эксперты «REST 911» обязательно ответят на них!</p>
-            </li>   
-            <li><a href="" class="nav-link">Видео</a>
-              <p>Полезные советы по борьбе с вредителями в саду, дома и на производстве.</p>
-            </li>
+            <li class="main-menu__item"><a href="" class="main-menu__link">акции</a></li>
+            <li class="main-menu__item"><a href="" class="main-menu__link">база&nbsp;знаний</a></li> 
           </ul>
-          <div class="slider"> 
+          <div class="main__pres present" > 
+            <ul class="present__nav navigation"> 
+              <li class="present__item"><a href="" class="present__link present__link--opt">Оптовикам</a>
+                <p class="present__story">Приглашаем к сотрудничеству организации и физических лиц для работы в качестве наших дилеров или торговых представителей.</p>
+              </li> 
+              <li class="present__item"><a href="" class="present__link present__link--quest">Задать вопрос</a>
+                <p class="present__story">Если у вас возникли вопросы, то наши эксперты «REST 911» обязательно ответят на них!</p>
+              </li>   
+              <li class="present__item"><a href="" class="present__link present__link--video">Видео</a>
+                <p class="present__story">Полезные советы по борьбе с вредителями в саду, дома и на производстве.</p>
+              </li>
+            </ul>
+            <div class="present__slider slider"> 
+            </div>
           </div>
-          <div class="tabs">
+          <div class="main__tabs tabs">
             <ul>
               <li>новинки</li>
                 <ul>
@@ -112,50 +118,52 @@
               <li>бренды</li>
             </ul>
           </div> 
-          <section class="story-cards"> 
-            <h2 class="bigger-font">топ вредителей</p>
-            <ul class="sc-list">
-              <li class="sc-link">
-                <a href="" class="round-icon"></a>                
-                <a href=""><p class="sc-link-text">Комары</p></a>
+          <section class="main__cards"> 
+            <h2 class="main__cards-font main__cards-font--cards">топ вредителей</h2>
+            <ul class="cards">
+              <li class="cards__item">
+                <a href="" class="cards__photo cards__photo--comar"></a>                
+                <a href="" class="cards__text">Комары</a>
               </li>
-              <li class="sc-link">
-                <a href="" class="round-icon"></a>                
-                <a href=""><p class="sc-link-text">Тараканы</p></a>
+              <li class="cards__item">
+                <a href="" class="cards__photo cards__photo--tarakan"></a>                
+                <a href="" class="cards__text">Тараканы</a>
               </li>
-              <li class="sc-link">
-                <a href="" class="round-icon"></a>                
-                <a href=""><p class="sc-link-text">Грызуны</p></a>
+              <li class="cards__item">
+                <a href="" class="cards__photo cards__photo--grizuni"></a>                
+                <a href="" class="cards__text">Грызуны</a>
               </li>
-              <li class="sc-link">
-                <a href="" class="round-icon"></a>                
-                <a href=""><p class="sc-link-text">Птицы</p></a>
+              <li class="cards__item">
+                <a href="" class="cards__photo cards__photo--ptizi"></a>                
+                <a href="" class="cards__text">Птицы</a>
               </li>
-              <li class="sc-link">
-                <a href="" class="round-icon"></a>                
-                <a href=""><p class="sc-link-text">Мыши</p></a>
+              <li class="cards__item">
+                <a href="" class="cards__photo cards__photo--mishi"></a>                
+                <a href="" class="cards__text">Мыши</a>
               </li>
-              <li class="sc-link">
-                <a href="" class="round-icon"></a>                
-                <a href=""><p class="sc-link-text">Крысы</p></a>
+              <li class="cards__item">
+                <a href="" class="cards__photo cards__photo--krisi"></a>                
+                <a href="" class="cards__text">Крысы</a>
               </li>
             </ul>
-          </div>
-          <div class="interactive">
+          </section>
+          <div class="main__interactive interactive">
             <section class="video">
-              <h2 class="bigger-font">Видео</h2>
+              <h2 class="main__cards-font">Видео</h2>
+              <iframe width="380" height="215" src="https://www.youtube.com/embed/JNrRMS4X9ew" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>              
             </section>
-            <section class="reviews">
-                <h2 class="bigger-font">Отзывы</h2>
-                <p class="caption">Ларина Светлана</p>
-                <p class="description">Садовод-любитель. Стаж 2 года</p>
-                <p class="review-story"><span class="quotes">«</span> Кстати, насчет кротов, был случай: крот проделал ход под сараем. Откопали нору, направили туда отпугиватель. За неделю
-                    крот ушел незнамо куда. На улице такие эксперименты не проводила. <span class="quotes">»</span>
-                </p>
-                <a href="" class="reviews-link">Посмотреть все отзывы</a>
+            <section class="interactive__reviews reviews">
+                <h2 class="main__cards-font">Отзывы</h2>
+                <div class="reviews__member">
+                  <p class="reviews__name">Ларина Светлана</p>
+                  <p class="reviews__description">Садовод-любитель. Стаж 2 года</p>
+                </div>
+                <p class="reviews__story"><span class="reviews__quotes">&#171</span> Кстати, насчет кротов, был случай: крот проделал ход под сараем. Откопали нору, направили туда отпугиватель. За неделю
+                    крот ушел незнамо куда. На улице такие эксперименты не проводила. <span class="reviews__quotes">&#187</span></p>
+                <a href="" class="reviews__link">Посмотреть все отзывы</a>
             </section>
             <section class="subscribe"> 
-                <h2 class="bigger-font">Подписаться</h2>               
+                <h2 class="main__cards-font">Подписаться</h2>               
                 <p class="subscribe-story">Подпишитесь на рассылку, чтобы первыми узнавать о наших новинках и получать призы</p> 
                 <input type="text" class="ubscribe-input" placeholder="*Эл. почта"> 
                 <input type="text" class="ubscribe-input" placeholder="Имя">  

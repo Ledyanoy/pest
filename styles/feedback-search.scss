@@ -1,0 +1,42 @@
+.feedback-search {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;    
+    &__phone {
+        width: 210px;
+    }
+    &__fb {
+        width: 112px;          
+    }
+    &__search {        
+        width: 100%;
+        margin-top: 8px;
+        position: relative;
+                       
+    }
+    &__input {
+        width: 95%; 
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 30px;
+        border: solid 1px $search-border;
+        border-radius: 2px;
+        &::-webkit-search-cancel-button {
+            display: none;
+        }                  
+    }
+    &__btn {        
+        height: 30px;
+        width: 45px;
+        border: none;
+        border-radius: 2px;
+        position: absolute;
+        top: 0px;  
+        right: 4px;        
+        background-color: $search-btn;
+        background-image: url(pictures/loupe.svg);
+        background-repeat: no-repeat;
+        background-position: 15px 8px;
+        cursor: pointer;            
+    }
+}
