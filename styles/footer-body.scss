@@ -1,0 +1,11 @@
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+    width: 90.5%;       
+    &__additional {
+        margin-left: 14%;      
+    } 
+    &__pay {
+        margin-left: 5%; 
+    }     
+}

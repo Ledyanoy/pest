@@ -52,6 +52,9 @@
         color: $black-color;
         text-decoration: none;
         border-bottom: 1px solid $link-color-hover;
+        &:hover {
+            color: $link-color-hover; 
+        }
         
     }  
 }

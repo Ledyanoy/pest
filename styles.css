@@ -48,6 +48,7 @@ table {
 .page {
   font-family: "PT Sans", Arial, Georgia; }
   .page__inner {
+    min-width: 280px;
     max-width: 960px;
     margin: 0 auto;
     padding: 0px 15px; }
@@ -234,7 +235,7 @@ table {
   @media (max-width: 740px) {
     .main-menu {
       flex-wrap: wrap; } }
-  @media (max-width: 555px) {
+  @media (max-width: 615px) {
     .main-menu {
       flex-direction: column; } }
   .main-menu__item {
@@ -243,7 +244,7 @@ table {
     padding-bottom: 12px; }
     .main-menu__item:hover .main-menu__sub {
       display: block; }
-    @media (max-width: 555px) {
+    @media (max-width: 615px) {
       .main-menu__item {
         text-align: center;
         overflow: hidden;
@@ -260,8 +261,8 @@ table {
     position: relative; }
     @media (max-width: 740px) {
       .main-menu__link {
-        margin: 0 25px; } }
-    @media (max-width: 555px) {
+        margin: 0 35px; } }
+    @media (max-width: 615px) {
       .main-menu__link {
         display: block;
         padding: 15px 0px;
@@ -278,7 +279,7 @@ table {
       border-left: 3px solid transparent;
       border-right: 3px solid transparent;
       border-top: 5px solid #000000; }
-      @media (max-width: 555px) {
+      @media (max-width: 615px) {
         .main-menu__link--cont:after {
           right: 20px;
           top: 20px; } }
@@ -367,20 +368,15 @@ table {
 
 .cards {
   display: flex;
-  margin-left: 7px; }
+  margin-left: 7px;
+  justify-content: space-between;
+  width: 99%; }
   .cards__item {
-    text-align: center;
-    margin-right: 4%; }
-    .cards__item:nth-child(2) {
-      margin-right: 5%; }
-    .cards__item:nth-child(3) {
-      margin-right: 6%; }
-    .cards__item:nth-child(5) {
-      margin-right: 5%; }
-    .cards__item:last-child {
-      margin-right: 0%; }
+    text-align: center; }
     .cards__item:hover .cards__photo {
-      border: 3px solid #82c044; }
+      border: 3px solid #82c044;
+      margin: -3px;
+      margin-bottom: 19px; }
     .cards__item:hover .cards__text {
       color: #82c044;
       border-bottom: none; }
@@ -391,8 +387,7 @@ table {
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 22px;
-    /* для pp*/
-    box-sizing: border-box; }
+    /* для pp*/ }
     .cards__photo--comar {
       background: url(pictures/comar.jpg) no-repeat -1px; }
     .cards__photo--tarakan {
@@ -470,6 +465,8 @@ table {
     color: #000000;
     text-decoration: none;
     border-bottom: 1px solid #82c044; }
+    .reviews__link:hover {
+      color: #82c044; }
 
 .subscribe__input {
   width: 95%;
@@ -509,4 +506,89 @@ table {
     background-color: #55ab00; }
 
 .p-footer {
+  padding-top: 26px;
+  padding-bottom: 35px;
   background-color: #82c044; }
+  .p-footer__body {
+    margin-left: 10px; }
+  .p-footer__footer {
+    margin-top: 25px;
+    margin-left: 5px; }
+
+.footer-menu__caption {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 13px; }
+
+.footer-menu__link {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 1.47em; }
+  .footer-menu__link:hover {
+    color: #fff; }
+
+.footer-menu__icons {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  width: 215px;
+  height: 90px; }
+  .footer-menu__icons--post {
+    width: 145px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: url(pictures/delivery.png) no-repeat; }
+
+.footer-menu__icon {
+  display: block;
+  width: 67px;
+  height: 43px;
+  border-radius: 5px; }
+  .footer-menu__icon--webmoney {
+    background: url(pictures/web.png); }
+  .footer-menu__icon--qiwi {
+    background: url(pictures/qw.png); }
+  .footer-menu__icon--mastercard {
+    background: url(pictures/mc.png); }
+  .footer-menu__icon--svyaznoy {
+    background: url(pictures/sv.png); }
+  .footer-menu__icon--yandex {
+    background: url(pictures/ya.png); }
+  .footer-menu__icon--visa {
+    background: url(pictures/visa.png); }
+
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+  width: 90.5%; }
+  .footer-body__additional {
+    margin-left: 14%; }
+  .footer-body__pay {
+    margin-left: 5%; }
+
+.footer-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  .footer-footer__social {
+    display: flex; }
+  .footer-footer__text {
+    color: #fff;
+    font-size: 14px; }
+  .footer-footer__link {
+    color: #000000; }
+  .footer-footer__social {
+    display: flex;
+    width: 138px;
+    justify-content: space-between;
+    margin-right: 22.5%; }
+  .footer-footer__icon {
+    display: block;
+    width: 21px;
+    height: 20px;
+    border: solid 1px #000000;
+    border-radius: 1px; }

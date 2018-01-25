@@ -1,0 +1,29 @@
+.footer-footer {
+    display: flex;   
+    justify-content: space-between; 
+    align-items: flex-end;       
+    &__social {
+    display: flex;
+    }
+    &__text {
+        color: $white-color;
+        font-size: 14px;
+    }
+    &__link {
+        color: $black-color;        
+    }
+    &__social {
+        display: flex;
+        width: 138px;
+        justify-content: space-between;
+        margin-right: 22.5%;
+                      
+    }
+    &__icon {
+        display: block;
+        width: 21px;
+        height: 20px;
+        border: solid 1px $black-color;
+        border-radius: 1px;
+    }
+}

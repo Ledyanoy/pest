@@ -1,0 +1,56 @@
+.footer-menu {        
+    &__caption {
+        font-size: 18px;
+        font-weight: bold;
+        color: $white-color;
+        margin-bottom: 13px;
+    }
+    &__link {
+        font-size: 14px; 
+        color: $black-color;
+        font-weight: bold;
+        line-height: 1.47em;
+        &:hover {
+            color: $white-color;
+        }
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 22px;
+        width: 215px;
+        height: 90px;        
+        &--post {
+            width: 145px;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            background: url(pictures/delivery.png) no-repeat;
+        }  
+    }
+    &__icon {
+        display: block;
+        width: 67px;
+        height: 43px;        
+        border-radius: 5px;
+        &--webmoney {
+            background: url(pictures/web.png);
+        }
+        &--qiwi {
+            background: url(pictures/qw.png);
+        }
+        &--mastercard {
+            background: url(pictures/mc.png);
+        }
+        &--svyaznoy {
+            background: url(pictures/sv.png);
+        }
+        &--yandex {
+            background: url(pictures/ya.png);
+        }
+        &--visa {
+            background: url(pictures/visa.png);
+        }
+    } 
+}   

@@ -4,7 +4,8 @@
 } 
 .page { 
     font-family: $font-primary;       
-    &__inner {        
+    &__inner { 
+        min-width: 280px;       
         max-width: 960px;
         margin: 0 auto;
         padding: 0px 15px;
