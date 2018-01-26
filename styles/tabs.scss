@@ -1,3 +1,110 @@
 .tabs {
-    
+    &__list {
+        display: flex; 
+        background-color: $link-color-hover; 
+        padding: 0 26px; 
+        border-radius: 2px 2px 0 0; 
+        @media (max-width: 590px) {
+            flex-direction: column; 
+            padding: 0;             
+        }    
+    }
+    &__list-item {
+        padding-top: 13px;
+        padding-bottom: 14px;
+        flex-grow: 1; 
+        text-align: center;
+        @media (max-width: 590px) { 
+            padding: 0;
+            width: 100%;
+            margin: 0;                              
+            border-bottom: 1px solid $black-color;            
+            &:last-child {
+                border: none;
+           }       
+        }
+    }
+    &__list-link {
+        text-decoration: none;
+        color: $black-color;
+        font-size: 15px;        
+        text-transform: uppercase; 
+        &:hover {
+            color: $white-color;
+        }
+        @media (max-width: 590px) {
+            display: block; 
+            padding: 15px 0;            
+        } 
+    }
+    &__cards {
+        display: flex;
+        background-color: $cards-block-bottom;
+        justify-content: space-between;
+        padding: 36px 50px;
+        border-radius: 0 0 2px 2px;
+        @media (max-width: 880px) {
+            flex-wrap: wrap;
+            padding: 36px 20px;                                 
+        } 
+        @media (max-width: 790px) {
+            padding: 36px 10px;
+            padding-bottom: 0; 
+        }
+        @media (max-width: 450px) {
+            flex-direction: column;
+            align-items: center;                     
+        }
+    }
+    &__card {
+        display: block;        
+        width: 170px;
+        background-color: $white-color;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        color: $black-color;
+        padding: 0 10px; 
+        padding-bottom: 10px;
+        border-radius: 2px;        
+        box-sizing: border-box; 
+        @media (max-width: 790px) { 
+            margin: 0 50px;            
+            margin-bottom: 36px;
+        }  
+        @media (max-width: 690px) {
+            margin: 0 40px; 
+            margin-bottom: 36px;         
+        }
+        @media (max-width: 570px) {
+            margin: 0 10px; 
+            margin-bottom: 36px;         
+        }     
+    }
+    &__image {        
+        position: relative;       
+        overflow: hidden;
+        width: 130px;
+        height: 125px;
+        margin: 0 auto; 
+          
+    }
+    &__pic { 
+        position: absolute;                
+        left: 0;
+        right: 0;        
+        margin: auto;      
+    }
+    &__text {
+        line-height: 1.3em;
+    }
+    &__price {
+        margin-top: 9px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &__cur {
+        font-size: 14px;
+        font-weight: normal;
+    }
 }

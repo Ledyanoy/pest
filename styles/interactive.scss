@@ -1,11 +1,35 @@
 .interactive {
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 11px;
     justify-content: space-between;
-    
+    @media (max-width: 900px) {
+        flex-wrap: wrap;
+        justify-content: space-around; 
+    } 
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;  
+    } 
+    &__video {
+        width: 380px;
+        height: 215px;
+        @media (max-width: 900px) {
+            width: 100%;
+            height: 300px; 
+            margin-bottom: 90px;
+        }
+    }    
     &__reviews {
         margin-left: 20px;
         margin-right: auto;
-    }           
+        @media (max-width: 900px) {
+            margin: 0;
+        } 
+        @media (max-width: 600px) {
+            margin-bottom: 20px;  
+        } 
+              
+    }   
+            
 }

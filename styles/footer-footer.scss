@@ -10,13 +10,16 @@
         font-size: 14px;
     }
     &__link {
-        color: $black-color;        
+        color: $black-color;  
+        &:hover {
+            color: $white-color;
+        }      
     }
     &__social {
         display: flex;
         width: 138px;
         justify-content: space-between;
-        margin-right: 22.5%;
+        margin-right: 23%;
                       
     }
     &__icon {
@@ -25,5 +28,9 @@
         height: 20px;
         border: solid 1px $black-color;
         border-radius: 1px;
+        &:hover {
+            border: none;
+            margin: 1px;
+        }
     }
 }
