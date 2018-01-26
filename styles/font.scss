@@ -1,0 +1,18 @@
+.font {
+    font-size: 14px;  
+    font-weight: bold;
+    line-height: 1.8em; 
+    &--buyer-place {
+        width: 190px;            
+    }         
+    &--link {    
+        display: inline-block;    
+        color: $black-color; 
+        text-decoration: none;
+        border-bottom: 1px dashed $link-color-hover;
+        line-height: 1em;
+        &:hover {
+            color: $link-color-hover;
+        }           
+    }
+}

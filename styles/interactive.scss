@@ -1,15 +1,11 @@
 .interactive {
     display: flex;
     padding-left: 10px;
+    padding-right: 10px;
     justify-content: space-between;
     
     &__reviews {
-        margin-left: 20px;       
-               
-    } 
-    &__subscribe {
-        width: 50%;
-        margin-left: 22px; /*для pp*/        
-              
-    }   
+        margin-left: 20px;
+        margin-right: auto;
+    }           
 }

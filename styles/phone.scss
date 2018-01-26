@@ -1,13 +1,13 @@
 .phone {
     &__city {
         font-size: 12px;
-        margin-bottom: 5px;
+        margin-bottom: 6px; /*для pp*/        
     }
     &__code {
         text-decoration: none;
         color: $black-color;
         font-size: 19px;        
-        margin-left: 7px;
+        margin-left: 7px;        
     }
     &__font {
         font-weight: bold;        

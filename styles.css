@@ -46,17 +46,23 @@ table {
   src: url(font/PTSans-Regular.woff2); }
 
 .page {
-  font-family: "PT Sans", Arial, Georgia; }
+  font-family: "PT Sans", Arial, Georgia;
+  padding-top: 20px; }
   .page__inner {
     min-width: 280px;
     max-width: 960px;
     margin: 0 auto;
     padding: 0px 15px; }
-  .page__header {
-    margin-top: 22px; }
   .page__main {
     margin-top: 25px;
     margin-bottom: 35px; }
+
+.wrapper {
+  min-width: 280px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px; }
 
 .p-header {
   display: flex;
@@ -69,74 +75,75 @@ table {
       flex-direction: column;
       align-items: center; } }
   .p-header__logo {
-    margin-top: 8px;
-    margin-right: 9.6%;
-    transition: margin 0.4s; }
+    margin-top: 10px; }
     @media (max-width: 845px) {
       .p-header__logo {
         margin-right: 0%;
         margin-bottom: 20px; } }
-  .p-header__fb {
-    width: 70%; }
+  .p-header__cb {
+    width: 48%;
+    margin-left: auto;
+    margin-right: 55px;
+    margin-top: 1px; }
     @media (max-width: 845px) {
-      .p-header__fb {
+      .p-header__cb {
         order: 3;
         width: 100%; } }
     @media (max-width: 370px) {
-      .p-header__fb {
+      .p-header__cb {
         flex-direction: column;
         align-items: center; } }
-  .p-header__login {
-    width: 200px;
-    margin-left: 5%;
-    transition: margin 0.4s; }
-    @media (max-width: 845px) {
-      .p-header__login {
-        margin-left: 0%; } }
+  .p-header__buyer-place {
+    width: 196px;
+    /*for pp*/
+    margin-top: 1px; }
     @media (max-width: 420px) {
-      .p-header__login {
+      .p-header__buyer-place {
         margin-bottom: 20px; } }
+  .p-header__basket {
+    margin-top: 7px; }
 
-.feedback-search {
+.connecting-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .feedback-search__phone {
+  .connecting-box__phone {
     width: 210px; }
-  .feedback-search__fb {
-    width: 112px; }
-  .feedback-search__search {
+  .connecting-box__font {
+    width: 109px; }
+  .connecting-box__search {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 7px;
     position: relative; }
-  .feedback-search__input {
-    width: 95%;
+  .connecting-box__input {
+    width: 100%;
     height: 30px;
     padding-left: 10px;
-    padding-right: 30px;
+    padding-right: 50px;
     border: solid 1px #bfbfbf;
-    border-radius: 2px; }
-    .feedback-search__input::-webkit-search-cancel-button {
+    border-radius: 4px; }
+    .connecting-box__input::-webkit-search-cancel-button {
       display: none; }
-  .feedback-search__btn {
+  .connecting-box__btn {
     height: 30px;
     width: 45px;
     border: none;
-    border-radius: 2px;
+    border-radius: 0 4px 4px 0;
     position: absolute;
     top: 0px;
-    right: 4px;
+    right: 0px;
     background-color: #0675cb;
     background-image: url(pictures/loupe.svg);
     background-repeat: no-repeat;
     background-position: 15px 8px;
     cursor: pointer; }
-    .feedback-search__btn:active {
+    .connecting-box__btn:active {
       background-color: #55ab00; }
 
 .phone__city {
   font-size: 12px;
-  margin-bottom: 5px; }
+  margin-bottom: 6px;
+  /*для pp*/ }
 
 .phone__code {
   text-decoration: none;
@@ -147,17 +154,19 @@ table {
 .phone__font {
   font-weight: bold; }
 
-.feedback {
+.font {
   font-size: 14px;
   font-weight: bold;
-  line-height: 1.7em; }
-  .feedback--login {
+  line-height: 1.8em; }
+  .font--buyer-place {
     width: 190px; }
-  .feedback__font {
+  .font--link {
+    display: inline-block;
     color: #000000;
-    text-decoration-color: #55ab00;
-    text-decoration-style: dashed; }
-    .feedback__font:hover {
+    text-decoration: none;
+    border-bottom: 1px dashed #82c044;
+    line-height: 1em; }
+    .font--link:hover {
       color: #82c044; }
 
 .visually-hidden {
@@ -171,41 +180,36 @@ table {
   width: 1px !important;
   overflow: hidden; }
 
-.login__card {
+.basket {
   display: block;
   background-color: #f6b213;
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 8px;
   border-radius: 3px;
-  width: 200px; }
-
-.login__basket {
-  padding-left: 40px;
-  color: #000000;
-  position: relative; }
-  .login__basket::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    width: 22px;
-    height: 20px;
-    background-image: url(pictures/basket.svg); }
-
-.login__price {
-  margin-left: 22px;
-  font-weight: bold;
-  font-size: 15px; }
-
-.login__cur {
-  font-size: 14px; }
-
-.login__delivery {
-  display: block;
-  font-size: 12px;
-  color: #fff;
-  margin-left: 10px;
-  margin-top: 11px; }
+  width: 196px; }
+  .basket__icon {
+    padding-left: 36px;
+    color: #000000;
+    position: relative; }
+    .basket__icon::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      width: 22px;
+      height: 20px;
+      background-image: url(pictures/basket.svg); }
+  .basket__price {
+    margin-left: 22px;
+    font-weight: bold;
+    font-size: 15px; }
+  .basket__cur {
+    font-size: 14px; }
+  .basket__delivery {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 11px; }
 
 .main__pres {
   margin-top: 40px;
@@ -410,19 +414,17 @@ table {
 .interactive {
   display: flex;
   padding-left: 10px;
+  padding-right: 10px;
   justify-content: space-between; }
   .interactive__reviews {
-    margin-left: 20px; }
-  .interactive__subscribe {
-    width: 50%;
-    margin-left: 22px;
-    /*для pp*/ }
+    margin-left: 20px;
+    margin-right: auto; }
 
 .reviews {
-  width: 65%; }
+  width: 265px; }
   .reviews__member {
     display: block;
-    margin-left: 32%;
+    padding-left: 92px;
     margin-bottom: 28px;
     position: relative; }
     .reviews__member:before {
@@ -431,7 +433,7 @@ table {
       display: block;
       width: 75px;
       height: 75px;
-      right: 108%;
+      right: 71%;
       top: -2px;
       border-radius: 50%;
       background: url(pictures/face.jpg); }
@@ -439,46 +441,34 @@ table {
     font-weight: bold;
     font-size: 18px; }
   .reviews__description {
-    color: #909090;
-    font-size: 14px;
     margin-top: 5px;
     line-height: 1.4em;
     width: 70%; }
-    .reviews__description--subscr {
-      width: 90%;
-      line-height: 1.3em;
-      margin-bottom: 13px; }
   .reviews__story {
     display: block;
-    width: 90%;
+    width: 265px;
     font-size: 14px;
-    line-height: 1.4em;
-    margin-bottom: 18px; }
+    line-height: 1.45em;
+    margin-bottom: 14px; }
   .reviews__quotes {
     color: #82c044;
     font-size: 28px;
     position: relative;
     top: 2px;
     line-height: 0em; }
-  .reviews__link {
-    font-size: 14px;
-    color: #000000;
-    text-decoration: none;
-    border-bottom: 1px solid #82c044; }
-    .reviews__link:hover {
-      color: #82c044; }
 
-.subscribe__input {
-  width: 95%;
-  border: none;
-  border-bottom: 1px solid #000000;
-  margin-bottom: 16px; }
-
-.subscribe__btn {
-  margin-top: 10px;
-  width: 95%;
-  height: 40px;
-  margin-bottom: 15px; }
+.subscribe {
+  width: 220px; }
+  .subscribe__input {
+    width: 220px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 16px; }
+  .subscribe__btn {
+    margin-top: 8px;
+    width: 220px;
+    height: 40px;
+    margin-bottom: 16px; }
 
 ::-webkit-input-placeholder {
   color: #909090; }
@@ -503,7 +493,7 @@ table {
   border-radius: 3px;
   cursor: pointer; }
   .button:active {
-    background-color: #55ab00; }
+    background: #55ab00; }
 
 .p-footer {
   padding-top: 26px;
@@ -569,6 +559,26 @@ table {
     margin-left: 14%; }
   .footer-body__pay {
     margin-left: 5%; }
+
+.gray-font {
+  color: #909090;
+  font-size: 14px; }
+  .gray-font--subscr {
+    width: 100%;
+    line-height: 1.3em;
+    margin-bottom: 14px; }
+
+.font-link {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #82c044; }
+  .font-link:hover {
+    color: #82c044; }
+  .font-link--subscr {
+    text-decoration: none;
+    border-bottom: 1px solid #82c044;
+    line-height: 1em; }
 
 .footer-footer {
   display: flex;

@@ -1,0 +1,14 @@
+.font-link {
+    font-size: 14px;
+    color: $black-color;        
+    text-decoration: underline;        
+    text-decoration-color:  $link-color-hover;
+    &:hover {
+        color: $link-color-hover; 
+    }
+    &--subscr {
+        text-decoration: none;
+        border-bottom: 1px solid $link-color-hover;
+        line-height: 1em;
+    }
+}

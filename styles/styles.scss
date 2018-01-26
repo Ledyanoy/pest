@@ -1,12 +1,13 @@
 @import 'reset';
 @import 'variables';
 @import 'page';
+@import 'wrapper';
 @import 'p-header';
-@import 'feedback-search';
+@import 'connecting-box';
 @import 'phone';
-@import 'feedback';
+@import 'font';
 @import 'visually-hidden';
-@import 'login';
+@import 'basket';
 @import 'main';
 @import 'main-menu';
 @import 'present';
@@ -20,4 +21,6 @@
 @import 'p-footer';
 @import 'footer-menu';
 @import 'footer-body';
+@import 'gray-font';
+@import 'font-link';
 @import 'footer-footer';
