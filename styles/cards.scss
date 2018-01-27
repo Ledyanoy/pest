@@ -26,8 +26,7 @@
         &:hover {
             .cards__photo {
                 border: 3px solid $link-color-hover; 
-                margin: -3px;
-                margin-bottom: 19px;                                             
+                margin: -3px -3px 19px;                                                             
             }
             .cards__text {
                 color: $link-color-hover; 
@@ -45,7 +44,6 @@
         }
         @media (max-width: 425px) {
             margin: 1%;
-                                       
         }
     }
     &__photo {

@@ -58,7 +58,7 @@ table {
     margin-bottom: 35px; }
 
 .wrapper {
-  min-width: 280px;
+  min-width: 270px;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -192,13 +192,15 @@ table {
     padding-left: 36px;
     color: #000000;
     position: relative; }
-    .basket__icon::before {
+    .basket__icon:before {
       content: "";
       position: absolute;
       left: 10px;
       width: 22px;
       height: 20px;
       background-image: url(pictures/basket.svg); }
+    .basket__icon:hover {
+      opacity: 0.6; }
   .basket__price {
     margin-left: 22px;
     font-weight: bold;
@@ -234,16 +236,16 @@ table {
     .main__cards {
       padding-bottom: 0px; } }
 
-.main__cards-font {
+.main__interactive {
+  margin-top: 37px; }
+
+.caption-font {
   text-transform: uppercase;
   font-size: 26px;
   margin-bottom: 37px;
   /* для pp */ }
-  .main__cards-font--cards {
+  .caption-font--cards {
     margin-left: 9px; }
-
-.main__interactive {
-  margin-top: 37px; }
 
 .main-menu {
   width: 100%;
@@ -442,6 +444,24 @@ table {
       border-bottom: 1px solid #000000; }
       .tabs__list-item:last-child {
         border: none; } }
+  .tabs__list-item--active .tabs__list-link {
+    position: relative;
+    color: #fff;
+    font-weight: bold; }
+    .tabs__list-item--active .tabs__list-link:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 100%;
+      margin-top: 2px;
+      right: 30%;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 10px solid #ececec; }
+      @media (max-width: 590px) {
+        .tabs__list-item--active .tabs__list-link:after {
+          display: none; } }
 
 .tabs__list-link {
   text-decoration: none;
@@ -467,8 +487,10 @@ table {
       padding: 36px 20px; } }
   @media (max-width: 790px) {
     .tabs__cards {
-      padding: 36px 10px;
-      padding-bottom: 0; } }
+      padding: 36px 16% 0; } }
+  @media (max-width: 600px) {
+    .tabs__cards {
+      padding: 36px 5% 0; } }
   @media (max-width: 450px) {
     .tabs__cards {
       flex-direction: column;
@@ -482,21 +504,17 @@ table {
   text-decoration: none;
   font-size: 14px;
   color: #000000;
-  padding: 0 10px;
   padding-bottom: 10px;
-  border-radius: 2px;
-  box-sizing: border-box; }
+  border-radius: 3px; }
+  .tabs__card:hover {
+    border: 2px solid #82c044;
+    margin: -2px;
+    border-radius: 3px; }
+    @media (max-width: 450px) {
+      .tabs__card:hover {
+        margin-bottom: 34px; } }
   @media (max-width: 790px) {
     .tabs__card {
-      margin: 0 50px;
-      margin-bottom: 36px; } }
-  @media (max-width: 690px) {
-    .tabs__card {
-      margin: 0 40px;
-      margin-bottom: 36px; } }
-  @media (max-width: 570px) {
-    .tabs__card {
-      margin: 0 10px;
       margin-bottom: 36px; } }
 
 .tabs__image {
@@ -550,8 +568,7 @@ table {
           margin-right: 0; } }
     .cards__item:hover .cards__photo {
       border: 3px solid #82c044;
-      margin: -3px;
-      margin-bottom: 19px; }
+      margin: -3px -3px 19px; }
     .cards__item:hover .cards__text {
       color: #82c044;
       border-bottom: none; }
@@ -625,6 +642,9 @@ table {
 
 .reviews {
   width: 265px; }
+  @media (max-width: 600px) {
+    .reviews {
+      width: 100%; } }
   .reviews__member {
     display: block;
     padding-left: 92px;
@@ -636,7 +656,7 @@ table {
       display: block;
       width: 75px;
       height: 75px;
-      right: 71%;
+      left: 0;
       top: -2px;
       border-radius: 50%;
       background: url(pictures/face.jpg); }
@@ -653,6 +673,9 @@ table {
     font-size: 14px;
     line-height: 1.45em;
     margin-bottom: 14px; }
+    @media (max-width: 600px) {
+      .reviews__story {
+        width: 100%; } }
   .reviews__quotes {
     color: #82c044;
     font-size: 28px;
@@ -662,16 +685,25 @@ table {
 
 .subscribe {
   width: 220px; }
+  @media (max-width: 600px) {
+    .subscribe {
+      width: 100%; } }
   .subscribe__input {
     width: 220px;
     border: none;
     border-bottom: 1px solid #000000;
     margin-bottom: 16px; }
+    @media (max-width: 600px) {
+      .subscribe__input {
+        width: 100%; } }
   .subscribe__btn {
     margin-top: 8px;
     width: 220px;
     height: 40px;
     margin-bottom: 16px; }
+    @media (max-width: 600px) {
+      .subscribe__btn {
+        width: 100%; } }
 
 ::-webkit-input-placeholder {
   color: #909090; }
@@ -757,12 +789,50 @@ table {
   display: flex;
   justify-content: space-between;
   width: 90%; }
+  @media (max-width: 930px) {
+    .footer-body {
+      width: 97%; } }
+  @media (max-width: 750px) {
+    .footer-body {
+      flex-wrap: wrap;
+      width: 65%;
+      margin: 0 auto; } }
+  @media (max-width: 550px) {
+    .footer-body {
+      flex-wrap: wrap;
+      width: 90%; } }
+  @media (max-width: 410px) {
+    .footer-body {
+      flex-direction: column;
+      padding-left: 20px; } }
   .footer-body__additional {
     width: 180px;
     margin-left: 17%; }
+    @media (max-width: 860px) {
+      .footer-body__additional {
+        margin: 0 auto; } }
+    @media (max-width: 750px) {
+      .footer-body__additional {
+        order: 3;
+        margin: 0;
+        margin-top: 20px; } }
+    @media (max-width: 410px) {
+      .footer-body__additional {
+        order: 2; } }
   .footer-body__pay {
     margin-left: auto;
     margin-right: 25px; }
+    @media (max-width: 750px) {
+      .footer-body__pay {
+        margin: 0; } }
+    @media (max-width: 410px) {
+      .footer-body__pay {
+        order: 2;
+        margin-top: 20px; } }
+  @media (max-width: 750px) {
+    .footer-body__delivery {
+      order: 4;
+      margin-top: 20px; } }
 
 .gray-font {
   color: #909090;
@@ -786,11 +856,18 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
+  @media (max-width: 570px) {
+    .footer-footer {
+      flex-wrap: wrap; } }
   .footer-footer__social {
     display: flex; }
   .footer-footer__text {
     color: #fff;
     font-size: 14px; }
+    @media (max-width: 570px) {
+      .footer-footer__text--develop {
+        width: 100%;
+        margin-top: 10px; } }
   .footer-footer__link {
     color: #000000; }
     .footer-footer__link:hover {
@@ -800,6 +877,9 @@ table {
     width: 138px;
     justify-content: space-between;
     margin-right: 23%; }
+    @media (max-width: 740px) {
+      .footer-footer__social {
+        margin-right: 0; } }
   .footer-footer__icon {
     display: block;
     width: 21px;

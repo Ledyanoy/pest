@@ -1,13 +1,55 @@
 .footer-body {
     display: flex;
     justify-content: space-between;
-    width: 90%;       
+    width: 90%; 
+    @media (max-width: 930px) {
+        width: 97%;                     
+    }
+    @media (max-width: 750px) {
+        flex-wrap: wrap;
+        width: 65%; 
+        margin: 0 auto;            
+    }
+    @media (max-width: 550px) {
+        flex-wrap: wrap;
+        width: 90%;
+    } 
+    @media (max-width: 410px) {
+        flex-direction: column; 
+        padding-left: 20px;       
+    }      
     &__additional {
         width: 180px;
-        margin-left: 17%;             
+        margin-left: 17%;
+        @media (max-width: 860px) {
+            margin: 0 auto;        
+        } 
+        @media (max-width: 750px) {            
+            order: 3;
+            margin: 0;
+            margin-top: 20px;              
+        }
+        @media (max-width: 410px) {            
+            order: 2;
+        }                      
     } 
     &__pay {
         margin-left: auto;
-        margin-right: 25px;        
+        margin-right: 25px;
+        @media (max-width: 750px) {
+            margin: 0;
+        } 
+        @media (max-width: 410px) {            
+            order: 2;
+            margin-top: 20px;
+        } 
+                 
+    } 
+    &__delivery {
+         @media (max-width: 750px) {
+            order: 4; 
+            margin-top: 20px; 
+        } 
+                 
     }     
 }

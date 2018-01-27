@@ -1,16 +1,25 @@
 .subscribe {
-    width: 220px; 
+    width: 220px;
+    @media (max-width: 600px) {
+        width: 100%;             
+    }  
     &__input {
         width: 220px;
         border: none;
         border-bottom: 1px solid $black-color;
         margin-bottom: 16px;             
+        @media (max-width: 600px) {
+            width: 100%;             
+        } 
     }
     &__btn {  
         margin-top: 8px;      
         width: 220px;
         height: 40px;
-        margin-bottom: 16px;          
+        margin-bottom: 16px;
+        @media (max-width: 600px) {
+            width: 100%;             
+        }          
     }    
 }
 ::-webkit-input-placeholder {color:$present-story-color;}

@@ -12,7 +12,6 @@
         flex-direction: column; 
         padding: 0;             
     }  
-                    
     &__item{        
         padding-top: 15px;
         padding-bottom: 14px;
@@ -24,7 +23,6 @@
         } 
         @media (max-width: 730px) {                     
             margin: 0 30px;           
-                   
          }
         @media (max-width: 590px) { 
             padding: 0;
