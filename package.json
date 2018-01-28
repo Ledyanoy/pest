@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Ledyanoy/pest#readme",
   "dependencies": {
+    "swiper": "^4.1.0",
     "togglr": "^1.0.0"
   },
   "devDependencies": {

@@ -1,3 +1,104 @@
-.slider {
-    
+.slider {    
+    z-index: 0;
+    @media (max-width: 700px) {
+        width: 100%;        		             
+	}
+    .swiper-button-next  {
+        background: none;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            top: 10%;
+            right: 35%;
+            background-color: $slider-btn-color;  
+            transform: skew(35deg);            
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            bottom: 0%;
+            right: 35%;
+            background-color: $slider-btn-color;  
+            transform: skew(-35deg);            
+        }
+        &:hover {
+            &:before {            
+                background-color: $link-color-hover;
+            }
+            &:after {            
+                background-color: $link-color-hover;
+            }
+        }  
+    }      
+    .swiper-button-prev {
+        background: none;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            top: 10%;
+            left: 35%;
+            background-color: $slider-btn-color;  
+            transform: skew(-35deg);            
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            bottom: 0%;
+            left: 35%;
+            background-color: $slider-btn-color;  
+            transform: skew(35deg);            
+        }
+        &:hover {
+            &:before {            
+                background-color: $link-color-hover;
+            }
+            &:after {            
+                background-color: $link-color-hover;
+            }
+        }
+    }     
+    .swiper-pagination-bullet {
+        background: $present-story-color;
+        opacity: 1;
+    } 
+    .swiper-pagination-bullet-active {
+        background: $mm-color;
+    }    
+    &--tabs {
+        width: 100%;
+        .swiper-button-next  {            
+            &:before {                
+                background-color: $slider-btn-tab-color;  
+            }
+            &:after {                
+                background-color: $slider-btn-tab-color; 
+            }
+        }        
+        .swiper-button-prev {
+            &:before {
+                background-color: $slider-btn-tab-color;   
+            }
+            &:after {
+                background-color: $slider-btn-tab-color;  
+            }           
+        }
+        .swiper-pagination-bullet {
+            display: none;
+        } 
+        .swiper-pagination-bullet-active {
+            display: none;
+        }
+    }
 }

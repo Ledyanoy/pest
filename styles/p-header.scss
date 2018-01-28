@@ -6,7 +6,7 @@
     }
     @media (max-width: 420px){
         flex-direction: column;
-        align-items: center;        
+        align-items: center;                     
     }   
     &__logo {
         margin-top: 10px;         
@@ -27,7 +27,7 @@
         }
         @media (max-width: 370px){
             flex-direction: column;
-            align-items: center;         
+                    
         }       
     }
     &__buyer-place {
@@ -42,4 +42,7 @@
     &__basket {
         margin-top: 7px;
     }
+    &__image {
+        vertical-align: bottom;
+    }    
 }

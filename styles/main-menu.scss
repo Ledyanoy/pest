@@ -5,26 +5,24 @@
     border-radius: 2px;
     padding-right: 7px;
     box-sizing: border-box;      
-    @media (max-width: 730px) {
+    @media (max-width: 750px) {
         flex-wrap: wrap;        
     } 
-    @media (max-width: 590px) {
+    @media (max-width: 610px) {
         flex-direction: column; 
         padding: 0;             
     }  
-    &__item{        
-        padding-top: 15px;
-        padding-bottom: 14px;
+    &__item{             
         flex-grow: 1; 
         text-align: center;
         position: relative; 
         &:hover .main-menu__sub {            
             display: block;          
         } 
-        @media (max-width: 730px) {                     
-            margin: 0 30px;           
-         }
-        @media (max-width: 590px) { 
+        @media (max-width: 750px) {                     
+            margin: 0 25px;           
+         }         
+        @media (max-width: 610px) { 
             padding: 0;
             width: 100%;
             margin: 0;                              
@@ -34,7 +32,10 @@
            }       
         }                         
     } 
-    &__link{        
+    &__link{ 
+        padding-top: 15px;
+        padding-bottom: 14px;
+        display: block;        
         text-decoration: none;
         color: $black-color;
         font-size: 15px;        
@@ -45,26 +46,21 @@
         }         
         &--drop {
             &:after {
-                content:""; 
-                position: absolute;
-                right: -10px;
-                top: 10px;               
-                width: 0;
+                content:"";
+                position: relative;
+                margin-left: 10px;                            
+                top: 14px;
                 height: 0;
                 border-left: 3px solid transparent;
                 border-right: 3px solid transparent;
                 border-top: 5px solid $black-color; 
-                @media (max-width: 590px) {            
+                @media (max-width: 610px) {
+                    position: absolute;               
                     right: 20px;
                     top: 20px;                           
                 }               
             }            
-        }
-        @media (max-width: 590px) {
-            display: block; 
-            padding: 15px 0;            
-                    
-        }                                      
+        }                                             
     }
     &__sub {
         display: none; 
@@ -76,7 +72,8 @@
         z-index: 1;       
         background: $mm-color;        
         border-radius: 0 0 2px 2px;        
-        &-link {                       
+        &-link {  
+            display: block;                     
             text-decoration: none;
             color: $black-color;
             font-size: 14px;

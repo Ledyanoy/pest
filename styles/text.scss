@@ -1,0 +1,13 @@
+.text {
+    font-size: 14px;      
+    line-height: 1.8em; 
+             
+    &--link {  
+        color: $black-color;
+        text-decoration: none;
+        border-bottom: 1px dashed $link-color-hover;      
+        &:hover {
+            color: $link-color-hover;
+        }           
+    }
+}

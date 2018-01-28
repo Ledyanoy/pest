@@ -9,7 +9,7 @@
         }      
     }
     &__tabs {
-        margin-top: 28px; /*для pp*/
+        margin-top: 31px; /*для pp*/
     }
     &__cards {
         margin-top: 38px; 
@@ -21,5 +21,9 @@
     }    
     &__interactive {
         margin-top: 37px;
+    }
+    &__text {
+        margin-bottom: 37px; /* для pp */
+        margin-left: 9px;
     }
 }

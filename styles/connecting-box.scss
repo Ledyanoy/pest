@@ -1,12 +1,19 @@
 .connecting-box {
     display: flex;
     flex-wrap: wrap;    
-    justify-content: space-between;    
+    justify-content: space-between;         
+    @media (max-width: 420px){
+        flex-direction: column;
+        align-items: center;                   
+    }      
     &__phone {
-        width: 210px;
+        width: 217px;                    
     }
-    &__font {
-        width: 109px;          
+    &__text {              
+        width: 109px;                 
+        @media (max-width: 420px){
+            width: 250px;                  
+        }     
     }
     &__search {        
         width: 100%;
