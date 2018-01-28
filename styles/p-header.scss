@@ -1,6 +1,7 @@
 .p-header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    align-items: flex-end; 
     @media (max-width: 845px){
         flex-wrap: wrap;        
     }
@@ -18,7 +19,7 @@
     &__cb {               
         width: 48%;
         margin-left: auto;
-        margin-right: 55px;
+        margin-right: 52px;
         margin-top: 1px;
         @media (max-width: 845px){
             order: 3;
@@ -30,9 +31,12 @@
                     
         }       
     }
-    &__buyer-place {
-        width: 196px; /*for pp*/
-        margin-top: 1px;       
+    &__text {
+        width: 198px;
+        line-height: 0em;
+    }
+    &__buyer-place {        
+        width: 198px; /*for pp*/               
         @media (max-width: 845px){ 
         }
         @media (max-width: 420px){
@@ -40,7 +44,7 @@
         }               
     }
     &__basket {
-        margin-top: 7px;
+        margin-top: 6px;
     }
     &__image {
         vertical-align: bottom;

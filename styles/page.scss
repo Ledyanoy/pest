@@ -1,10 +1,12 @@
 @font-face {
 	font-family: "PT Sans"; 
-	src: url(font/PTSans-Regular.woff2); 
+    src: url(font/PTSans-Regular.woff2) format('woff2'),
+        url(font/PTSans-Regular.woff) format('woff') ; 
 } 
 @font-face {
 	font-family: "PT Sans"; 
-    src: url(font/PTSans-Bold.woff2); 
+    src: url(font/PTSans-Bold.woff2) format('woff2'),
+    url(font/PTSans-Bold.woff) format('woff');
     font-weight: bold;
 } 
 .page { 
@@ -17,7 +19,7 @@
         padding: 0px 15px;
     }    
     &__main {
-        margin-top: 25px;
+        margin-top: 28px;
         margin-bottom: 35px;
     }
 }
